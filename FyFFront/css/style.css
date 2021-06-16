@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    background-image: url(https://ticjob.es/img/theme-nd/no-fusion/background-home.jpg);
+    background-size: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.titulo {
+    margin: 50px;
+    margin-left: 10%;
+    color: orangered;
+}
+    .subtitulo {
+        margin-bottom: 5px;
+    }
+div.menu {
+    display: flex;
+    font-weight: bold;
+    flex-direction: row;
+    margin-top: -85px;
+    margin-right: 20px;
+}
+    div.menu>div {
+        background-color: whitesmoke;
+        margin-top: 20px;
+        margin: 15px;
+        padding: 8px 12px;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 0px 0px 20px 0px black;
+        width: 110px;
+    }
+        div.menu .signup {
+            background-color: dodgerblue;
+            color: white;
+        }
+
+        div.menu .favoritos {
+            background-color: whitesmoke;
+            color: black;
+        }
+
+        div.menu .logout {
+            background-color: dodgerblue;
+            color: black;
+        }
+            div.menu>div:hover {
+                cursor: pointer;
+                transform: scale(1.05);
+            }
+
+div.buscador {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px auto;
+    background-color: rgba(245, 245, 245, 0.6);
+    border-radius: 10px;
+    padding: 12px;
+    width: 80%;
+}
+    .buscador input {
+        padding: 10px;
+        margin: 0px 10px;
+        width: 30%;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px 0px black;
+    }
+    .buscador input:focus {
+        outline: none;
+    }
+    .buscador .menu-btn {
+        display: flex;
+        flex-direction: row;
+    }
+    .buscador button {
+        background-color: orangered;
+        color: white;
+        margin: 0px 5px;
+        border: none;
+        width: 100px;
+        font-weight: bold;
+        border-radius: 10px;
+        font-weight: bold;
+        box-shadow: 0px 0px 20px 0px black;
+    }
+        .buscador button:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+        .buscador button:focus {
+            outline: none;
+        }
+.result .oferta {
+    width: 90%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 1000px;
+    background-color: whitesmoke;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px -4px black;
+    color: black;
+}
+    .oferta a {
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: bold;
+        color: black;
+    }
+        .oferta a:hover {
+            text-decoration: underline;
+        }
+    .oferta h3 {
+        margin-top: 15px;
+        font-weight: normal;
+    }
+    .oferta img {
+        margin-top: 10px;
+        width: 25px;
+    }
+        .oferta img:hover {
+            cursor: pointer;
+            transform: scale(1.20);
+        }
+     
+.btn{
+    border-radius: 20px;
+}
+
+@media screen and ( max-width: 610px ) {
+    header  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+    }
+
+    div.buscador {
+        width: 95%;
+    }
+
+}
+
+@media screen and ( max-width: 610px ) {
+    div.menu{
+        margin-top: -187px;
+    }
+    div.buscador {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 10px;
+        margin-top: 120px;
+    }
+    .buscador input {
+        margin: 5px auto;
+        width: 90%;
+    }
+
+    .buscador button {
+        margin: 10px 10px;
+        padding: 6px;
+    }
+
+    div.main{
+        height: auto;
+        padding-bottom: 1px;
+    }
+
+    div.titulo{
+        margin-top: 100px;
+    }
+
+  .oferta a{
+      font-size: 22px;
+  }
+
+  .oferta h3{
+      font-size: 18px;
+  }
+
+
+}

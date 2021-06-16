@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.flaticon.com/premium-icon/icons/svg/1184/1184787.svg">
+    <link rel="stylesheet" href="signup.css">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="749288165661-tmve0f0uqv56n6q382e8iqp8p2phqjp1.apps.googleusercontent.com">
+    <title>FyF</title>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="749288165661-tmve0f0uqv56n6q382e8iqp8p2phqjp1.apps.googleusercontent.com">
+</head>
+<body>
+    <div class="form">
+        <h2 class="titulo">Crear nuevo usuario</h2>
+        <input type="email" class="email" id="email" placeholder="Escribe tu mail" required>
+        <input type="password" name="pass" id="pass" placeholder="Escribe tu contraseña" required>
+        <div class="botones">
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            <div class="btnSign" id="signup">Crear</div>
+        </div>
+        <p class="linkSing"> ¿Ya tienes una cuenta? <a href="../signin" id="login">Entra aquí</a></p>
+        <p class="linkSing"> Volver a la <a href="/" id="login">home</a></p>
+        
+        
+       
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>
